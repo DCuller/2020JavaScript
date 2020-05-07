@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Andrew's Appliance</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="script.js"></script>
+    </head>
+<body>
+    <div id="container">
+        <h1>Calculator</h1>
+        <div id="calculator">
+            <form>
+                <div>
+                    <p>Appliance Categories:</p>
+                    <select id="category">
+                        <option disabled selected value="">-- Choose an Option --</option>
+                        <option value="tv">Television</option>
+                        <option value="fridge">Refrigerator</option>
+                        <option value="washer">Washer/Dryer</option>
+                    </select>
+                </div>
+                &nbsp;&nbsp;
+                <div>
+                    <input type="hidden" id="selectedPrice"/>
+                    <table>
+                        <tr>
+                            <td id="td1"><img id="img1" class="black-border"></td>
+                            <td id="td2"><img id="img2" class="black-border"></td>
+                            <td id="td3"><img id="img3" class="black-border"></td>
+                        </tr>
+                        <tr>
+                            <td><span id="price1"></span></td>
+                            <td><span id="price2"></span></td>
+                            <td><span id="price3"></span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <p>Shipping Option:</p>
+                    <input type="radio" name="shipping" value="400">Overnight $400
+                    <input type="radio" name="shipping" value="300">Express $300
+                    <input type="radio" name="shipping" value="200">Regular $200
+                </div>
+                <div>
+                    <p>State Tax:</p>
+                    <select id="state">
+                        <option disabled selected value="">-- Choose an Option --</option>
+                        <option value=".06">PA 6%</option>
+                        <option value=".06">NJ 6%</option>
+                        <option value="0">DE 0%</option>
+                    </select>
+                </div>
+            </form>
+            <br>
+            <button type="button" id="calculate">Calculate</button>
+
+        </div>
+        <br>
+        <div>Total:
+        <sup>$</sup><span id="total">0.00</span>
+        </div>
+
+    </div>
+
+    </body>
+</html>

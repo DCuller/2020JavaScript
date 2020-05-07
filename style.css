@@ -1,0 +1,17 @@
+body {
+  font-family: Roboto;
+}
+
+td {
+    text-align: center;
+}
+
+.black-border {
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
+.red-border {
+  border: 5px solid red;
+  border-radius: 5px;
+}
